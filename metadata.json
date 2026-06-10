@@ -1,0 +1,6 @@
+{
+  "name": "blockTech",
+  "description": "Agencia de Inteligencia Artificial en Cali, Colombia. Automatización de contabilidad, agentes de contenido, chatbots de ventas y copilotos empresariales.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
