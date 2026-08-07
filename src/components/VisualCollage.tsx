@@ -1,5 +1,11 @@
 import { motion } from 'motion/react';
 import { Sparkles, Brain, RefreshCw, Volume2, CheckCircle, MessageSquare } from 'lucide-react';
+import imgAiProcessing from '../assets/images/ai-processing.jpg';
+import imgAutoSync from '../assets/images/auto-sync.jpg';
+import imgAlineacionVocal from '../assets/images/alineacion-vocal.jpg';
+import imgVoiceModel from '../assets/images/voice-model-match.jpg';
+import imgAlineacionNube from '../assets/images/alineacion-nube.jpg';
+import alejandraPhoto from '../assets/images/alejandra-ramos.jpg';
 
 export default function VisualCollage() {
   return (
@@ -21,7 +27,7 @@ export default function VisualCollage() {
         {/* Card 1 */}
         <div className="bg-white-card rounded-3xl p-6 border border-line/30 shadow-md">
           <div className="relative h-48 rounded-xl overflow-hidden mb-4">
-            <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1751467928435-22c8826b5310?q=80&w=800" alt="IA Processing" />
+            <img className="w-full h-full object-cover" src={imgAiProcessing} alt="IA Processing" />
           </div>
           <div className="flex justify-between items-center mb-1">
             <span className="font-sans text-xs font-bold text-text uppercase tracking-widest">Ejecución del Agente</span>
@@ -35,7 +41,7 @@ export default function VisualCollage() {
         {/* Card 2 */}
         <div className="bg-white-card rounded-3xl p-6 border border-line/30 shadow-md flex flex-col justify-between">
           <div className="relative h-48 rounded-xl overflow-hidden mb-4">
-            <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1762532264999-7dde57d37f22?q=80&w=800" alt="Auto-Sync" />
+            <img className="w-full h-full object-cover" src={imgAutoSync} alt="Auto-Sync" />
           </div>
           <div className="flex items-center gap-2">
             <Sparkles className="w-5 h-5 text-orange-500" />
@@ -58,7 +64,7 @@ export default function VisualCollage() {
         {/* Card 4 */}
         <div className="bg-white-card rounded-3xl p-6 border border-line/30 shadow-md">
           <div className="relative h-48 rounded-xl overflow-hidden mb-4">
-            <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1607874089816-bf5af74fe2c5?q=80&w=800" alt="Alineación vocal" />
+            <img className="w-full h-full object-cover" src={imgAlineacionVocal} alt="Alineación vocal" />
           </div>
           <span className="font-mono text-[10px] bg-black text-white px-2 py-1 rounded tracking-widest uppercase">Análisis Cognitivo Escrito</span>
         </div>
@@ -66,7 +72,7 @@ export default function VisualCollage() {
         {/* Comment block mobile icon */}
         <div className="bg-soft-card-2 p-4 rounded-2xl flex items-center gap-3 border border-line/30">
           <div className="w-10 h-10 rounded-full overflow-hidden border border-black/10 shrink-0">
-            <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxUZpAK7kBAK1H5Anlz-i_nh19XyaGUt1hLDC6ZASnuBK2vRcwFDP46vx7HodMWCGvWJVA3aKLfp00pDRGNPsH0LVYvOGBSQ1KJIx2wTCxFcEJMNlnv9DHJKT0wyVelxRunXJN3d41Z2MPDK4poxQF_iybQaYL4ebVjC52RWnq9U6Y-VA7k5seZ7Z4c1n3nq7ply6CwSNm8-OH_B6wae1-h-Zmn2y3jh9urDyal2zhahuy408MHHCcPTmA9TNKUOA7WEsjuEy1iMvC" />
+            <img className="w-full h-full object-cover" src={alejandraPhoto} />
           </div>
           <div>
             <p className="font-sans text-xs font-bold text-text">Alejandra Ramos</p>
@@ -88,7 +94,7 @@ export default function VisualCollage() {
           className="absolute rounded-[32px] overflow-hidden bg-white/10 backdrop-blur-2xl backdrop-saturate-150 border border-white/40 shadow-2xl pointer-events-auto cursor-pointer"
           style={{ left: '6%', top: '8%', width: '340px', height: '260px', zIndex: 10 }}
         >
-          <img className="w-full h-full object-cover select-none" src="https://images.unsplash.com/photo-1751467928435-22c8826b5310?q=80&w=1064" alt="Procesando Datos de AI" />
+          <img className="w-full h-full object-cover select-none" src={imgAiProcessing} alt="Procesando Datos de AI" />
           <div className="absolute bottom-4 left-4 right-4 bg-white/35 backdrop-blur-xl border border-white/40 rounded-2xl p-4 shadow-lg">
             <div className="flex justify-between items-center mb-2">
               <span className="font-sans text-[10px] text-text font-bold uppercase tracking-wider">Alineando Contexto</span>
@@ -107,7 +113,7 @@ export default function VisualCollage() {
           className="absolute rounded-[32px] overflow-hidden bg-white/10 backdrop-blur-2xl backdrop-saturate-150 border border-white/40 shadow-2xl pointer-events-auto cursor-pointer"
           style={{ right: '8%', top: '10%', width: '280px', height: '320px', zIndex: 10 }}
         >
-          <img className="w-full h-full object-cover select-none" src="https://images.unsplash.com/photo-1762532264999-7dde57d37f22?q=80&w=2664" alt="Generación Creativa" />
+          <img className="w-full h-full object-cover select-none" src={imgAutoSync} alt="Generación Creativa" />
           <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/55 backdrop-blur-md border border-white/50 flex items-center justify-center shadow-sm">
             <Brain className="w-4 h-4 text-text" />
           </div>
@@ -144,7 +150,7 @@ export default function VisualCollage() {
           className="absolute rounded-[32px] overflow-hidden bg-white/10 backdrop-blur-2xl backdrop-saturate-150 border border-white/40 shadow-2xl pointer-events-auto cursor-pointer"
           style={{ right: '5%', top: '48%', width: '320px', height: '220px', zIndex: 10 }}
         >
-          <img className="w-full h-full object-cover select-none" src="https://images.unsplash.com/photo-1607874089816-bf5af74fe2c5?q=80&w=2070" alt="Análisis Semántico" />
+          <img className="w-full h-full object-cover select-none" src={imgAlineacionVocal} alt="Análisis Semántico" />
           <div className="absolute top-4 left-4 bg-white/40 backdrop-blur-xl px-4 py-2 rounded-full border border-white/50 shadow-sm flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.8)]"></div>
             <span className="font-sans text-[10px] font-bold text-text uppercase tracking-wider">ANÁLISIS COGNITIVO</span>
@@ -158,7 +164,7 @@ export default function VisualCollage() {
           className="absolute rounded-[32px] overflow-hidden bg-white/10 backdrop-blur-2xl backdrop-saturate-150 border border-white/40 shadow-2xl pointer-events-auto cursor-pointer"
           style={{ left: '10%', top: '68%', width: '380px', height: '260px', zIndex: 10 }}
         >
-          <img className="w-full h-full object-cover select-none" src="https://images.unsplash.com/photo-1758369636841-241369c12f3b?q=80&w=1064" alt="Voice Model Match" />
+          <img className="w-full h-full object-cover select-none" src={imgVoiceModel} alt="Voice Model Match" />
           <div className="absolute bottom-5 left-5 bg-white/50 backdrop-blur-xl px-4 py-2 rounded-full border border-white/50 shadow-sm flex items-center gap-2">
             <Volume2 className="w-4 h-4 text-text" />
             <span className="font-sans text-[10px] font-bold text-text uppercase tracking-wider">POLÍTICA TONAL</span>
@@ -172,7 +178,7 @@ export default function VisualCollage() {
           className="absolute rounded-[32px] overflow-hidden bg-white/10 backdrop-blur-2xl backdrop-saturate-150 border border-white/40 shadow-2xl pointer-events-auto cursor-pointer"
           style={{ right: '12%', top: '74%', width: '360px', height: '240px', zIndex: 10 }}
         >
-          <img className="w-full h-full object-cover select-none" src="https://images.unsplash.com/photo-1661962399580-80301d32d791?q=80&w=1625" alt="Alineación en la Nube" />
+          <img className="w-full h-full object-cover select-none" src={imgAlineacionNube} alt="Alineación en la Nube" />
         </motion.div>
 
         {/* 7. Floating Comment / Profile */}
@@ -183,7 +189,7 @@ export default function VisualCollage() {
           style={{ left: '42%', top: '84%', width: 'max-content', zIndex: 25 }}
         >
           <div className="w-10 h-10 rounded-full bg-soft-card overflow-hidden shadow-sm border border-white/60">
-            <img className="w-full h-full object-cover select-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxUZpAK7kBAK1H5Anlz-i_nh19XyaGUt1hLDC6ZASnuBK2vRcwFDP46vx7HodMWCGvWJVA3aKLfp00pDRGNPsH0LVYvOGBSQ1KJIx2wTCxFcEJMNlnv9DHJKT0wyVelxRunXJN3d41Z2MPDK4poxQF_iybQaYL4ebVjC52RWnq9U6Y-VA7k5seZ7Z4c1n3nq7ply6CwSNm8-OH_B6wae1-h-Zmn2y3jh9urDyal2zhahuy408MHHCcPTmA9TNKUOA7WEsjuEy1iMvC" alt="Alejandra Ramos" />
+            <img className="w-full h-full object-cover select-none" src={alejandraPhoto} alt="Alejandra Ramos" />
           </div>
           <div className="flex flex-col pr-4 text-left">
             <span className="font-sans text-[11px] text-text font-bold">Alejandra Ramos</span>
