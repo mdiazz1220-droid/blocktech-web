@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Quote } from 'lucide-react';
+import alejandraPhoto from '../assets/images/alejandra-ramos.jpg';
 
 export default function Testimonial() {
   return (
@@ -21,7 +22,7 @@ export default function Testimonial() {
           <div className="w-14 h-14 rounded-full bg-slate-200 overflow-hidden shadow-md border-2 border-white select-none">
             <img 
               className="w-full h-full object-cover" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_dQOYUXm-9ocUk-1cRA5ZyP6tu7OdWwNIU7SRhouWt3u89anzj3A5_pr7FGCCICOiz6a2FoSpC-bN53AYbiVQ-spgKPawBtGZtLq-9c6QyNclym7oEuOsCnQllJenEGuMkAeM3mwnTOLdgJakEE63ozCYcDA2l-C2EQnZiozAakUbDrwJG_jxTwrvV9I5p2oiVPXIDBv-rltdG9P0TX6X2OUHQcwckpskXXJEawplcI8ff_rzn1YnIDgrniF27Vjc0Lz4LKcazue9" 
+              src={alejandraPhoto} 
               alt="Alejandra Ramos"
             />
           </div>
