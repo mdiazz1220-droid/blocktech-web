@@ -1,11 +1,24 @@
-FROM node:20-alpine AS builder
+# Etapa 1: Build de la aplicación con Node 20
+FROM node:20-alpine AS build
+
 WORKDIR /app
+
+# Copiamos los archivos de dependencias primero (aprovecha la caché de Docker)
 COPY package*.json ./
-RUN npm install --legacy-peer-deps
+RUN npm install
+
+# Copiamos el resto del código
 COPY . .
+
+# Variable de entorno necesaria en build time para Vite (si tu app la usa en el cliente)
+ARG GEMINI_API_KEY
+ENV GEMINI_API_KEY=$GEMINI_API_KEY
+
 RUN npm run build
 
-FROM caddy:alpine
-COPY --from=builder /app/dist /srv
+# Etapa 2: Servimos los archivos estáticos con Caddy
+FROM caddy:2-alpine
+
+COPY --from=build /app/dist /usr/share/caddy
+
 EXPOSE 80
-CMD ["caddy", "file-server", "--root", "/srv", "--listen", ":80"]
